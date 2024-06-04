@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willify</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/logos/WillifyLogo.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="navigation">
+                <div class="navigation-header">
+                    <div class="logo">
+                        <img src="assets/logos/logo.svg">
+                    </div>
+                    <div class="profile">
+                        <a href="register.html">
+                            <img src="assets/logos/profile.svg" alt="profile">
+                        </a>
+                    </div>
+                </div>
+                <ul class="navigation-content">
+                    <a class="active"><img src="assets/logos/home.svg" alt="home">Home</a>
+                    <a href="songs.html"><img src="assets/logos/songs.svg" alt="songs">Songs</a>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <div class="header-content">
+                    <h1 class="header-title">Home</h1>
+                    <div class="search-container">
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="scrollable-page">
+                <div class="content">
+                    <div class="container" id="container1">
+                        <h1 class="title">Willify</h1>
+                        <p class="brief-info">
+                            A renowned music streaming platform that made its debut in 2006. Originating as a digital audio service, Willify quickly gained prominence and has become a household name in the world of music. Starting with a vision to revolutionize how people consume music, Willify has grown into a global phenomenon with millions of active users.
+                        </p>
+                        <a href="about.html">
+                            <div class="buttons">
+                                <button class="abtus-btn">More About Us</button>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="songlist">
+                        <h1 class="title">Best Seller</h1>
+                        <ul class="songlist-item">
+                            <li>
+                                <img src="assets/images/Sabrina_Carpenter_-_Espresso.jpg" alt="song1">
+                                <h1 class="song-title">Espresso</h1>
+                                <h2 class="artist">Sabrina Carpenter</h2>
+                            </li>
+                            <li>
+                                <img src="assets/images/Billie_Eilish_-_Hit_Me_Hard_and_Soft.png" alt="song2">
+                                <h1 class="song-title">LUNCH</h1>
+                                <h2 class="artist">Billie Eilish</h2>
+                            </li>
+                            <li>
+                                <img src="assets/images/Kendrick_Lamar_-_Not_Like_Us.png" alt="song3">
+                                <h1 class="song-title">Not Like Us</h1>
+                                <h2 class="artist">Kendrick Lamar</h2>
+                            </li>
+                            <li>
+                                <img src="assets/images/Chappell_Roan_-_Good_Luck,_Babe!.png" alt="song4">
+                                <h1 class="song-title">Good Luck, Babe!</h1>
+                                <h2 class="artist">Chappell Roan</h2>
+                            </li>
+                            <li>
+                                <img src="assets/images/Djo_-_End_of_Beginning.png" alt="song4">
+                                <h1 class="song-title">End of Beginning</h1>
+                                <h2 class="artist">Djo</h2>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="songlist">
+                        <h1 class="title">Recommendations</h1>
+                        <ul class="songlist-item">
+                            <li>
+                                <img src="assets/images/Frank_Ocean_-_Pyramids.jpg" alt="song1">
+                                <h1 class="song-title">Pyramids</h1>
+                                <h2 class="artist">Frank Ocean</h2>
+                            </li>
+                            <li>
+                                <img src="assets/images/beabadoobee_-_Apple_Cider.jpg" alt="song2">
+                                <h1 class="song-title">Apple Cider</h1>
+                                <h2 class="artist">beabadoobee</h2>
+                            </li>
+                            <li>
+                                <img src="assets/images/Brent_Faiyaz_-_MERCEDES.png" alt="song3">
+                                <h1 class="song-title">MERCEDES</h1>
+                                <h2 class="artist">Brent Faiyaz</h2>
+                            </li>
+                            <li>
+                                <img src="assets/images/Reality_Club_-_A_Sorrowful_Reunion.jpg" alt="song4">
+                                <h1 class="song-title">A Sorrowful Reunion</h1>
+                                <h2 class="artist">Reality Club</h2>
+                            </li>
+                            <li>
+                                <img src="assets/images/Chappell_Roan_-_Good_Luck,_Babe!.png" alt="song4">
+                                <h1 class="song-title">Good Luck Babe!</h1>
+                                <h2 class="artist">Chappell Roan</h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="footer-text">© 2024 Willify. Made by Helena Aurelia S.</p>
+            </div>
+        </div>
+        <div class="playbar">
+            <div class="seekbar">
+                <div class="progress"></div>
+            </div>
+            <div class="controls">
+                <button id="prevButton">&lt;</button>
+                <button id="playButton">▶</button>
+                <button id="nextButton">&gt;</button>
+            </div>
+            <div class="time">
+                <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+            </div>
+            <div class="volume">
+                <button id="muteButton"><img src="assets/logos/volume.svg" alt=""></button>
+                <input type="range" id="volumeControl" min="0" max="100" value="100">
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="hamburger-content">
+            <a href="home.html"><img src="assets/logos/home2.svg" alt="home">Home</a>
+            <a href="songs.html"><img src="assets/logos/songs.svg" alt="songs">Songs</a>
+        </div>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger-icon" onclick="toggleHamburgerMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <audio id="audioPlayer" controls>
+        <source src="assets/song/ssi.mp3juice.blog - Frank Ocean - Pink + White.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+      
+
+    <script src="js/script.js"></script>
+</body>
+</html>
